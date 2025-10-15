@@ -8,7 +8,7 @@ import pickle
 import streamlit as st
 
 # Load the saved model 
-loaded_model=pickle.load(open('C:/Users/mausa/OneDrive/Desktop/ML/Model/trained_model.sav','rb'))
+loaded_model = pickle.load(open('trained_model.sav', 'rb'))
 # Prediction function
 def heart_pred(input_data):
     arr = np.array(input_data, dtype=float)  # ensure numeric
